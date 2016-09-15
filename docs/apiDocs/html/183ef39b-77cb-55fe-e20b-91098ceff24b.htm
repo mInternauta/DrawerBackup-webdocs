@@ -1,0 +1,340 @@
+﻿<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
+    <script type="text/javascript" src="../scripts/branding.js"> </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>DbManager Methods</title>
+    <meta name="Language" content="en-us" />
+    <meta name="System.Keywords" content="DbManager class, methods" />
+    <meta name="Microsoft.Help.Id" content="Methods.T:DrawerBackup.Native.Data.DbManager" />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <meta name="BrandingAware" content="true" />
+    
+    <meta name="container" content="DrawerBackup.Native.Data" />
+    <meta name="file" content="183ef39b-77cb-55fe-e20b-91098ceff24b" />
+    <meta name="guid" content="183ef39b-77cb-55fe-e20b-91098ceff24b" />
+    
+    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
+    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
+  </head>
+  <body onload="OnLoad('cs')">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div class="pageHeader" id="PageHeader">DrawerBackup Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
+    <div class="pageBody">
+      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="e75ef240-01d3-4ce3-8365-7f973e4e9d00.htm" title="DrawerBackup Documentation" tocid="roottoc">DrawerBackup Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="421de8ee-70b2-b1b2-1a23-a14531b40701.htm" title="DrawerBackup" tocid="421de8ee-70b2-b1b2-1a23-a14531b40701">DrawerBackup</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="cdabb592-50a7-236e-ec87-350bcef30098.htm" title="DrawerBackup.Native Namespaces" tocid="cdabb592-50a7-236e-ec87-350bcef30098">DrawerBackup.Native Namespaces</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="23cb3ab3-556a-d27d-0343-6b54b1cf71cb.htm" title="DrawerBackup.Native.Data Namespaces" tocid="23cb3ab3-556a-d27d-0343-6b54b1cf71cb">DrawerBackup.Native.Data Namespaces</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="1d94842a-e475-99e4-001d-e9c24e8cbf8f.htm" title="DrawerBackup.Native.Data" tocid="1d94842a-e475-99e4-001d-e9c24e8cbf8f">DrawerBackup.Native.Data</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="173268c9-9562-bd55-84a7-c7503b371a40.htm" title="DbManager Class" tocid="173268c9-9562-bd55-84a7-c7503b371a40">DbManager Class</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="183ef39b-77cb-55fe-e20b-91098ceff24b.htm" title="DbManager Methods" tocid="183ef39b-77cb-55fe-e20b-91098ceff24b">DbManager Methods</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="b15b5c7e-82b7-4438-3d77-2a01ac39abb4.htm" title="AddField Method " tocid="b15b5c7e-82b7-4438-3d77-2a01ac39abb4">AddField Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="2b0343cb-0b9c-f49f-78e6-5f193b6a5a61.htm" title="Backup Method " tocid="2b0343cb-0b9c-f49f-78e6-5f193b6a5a61">Backup Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="7a5f2d4d-ecc5-2467-d9df-b5357042058d.htm" title="Check Method " tocid="7a5f2d4d-ecc5-2467-d9df-b5357042058d">Check Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="a727383c-ba76-4aac-6e57-601e6122b374.htm" title="CheckSchema Method " tocid="a727383c-ba76-4aac-6e57-601e6122b374">CheckSchema Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="27cde061-4e68-dff5-01c6-2ed1364d2425.htm" title="Create Method " tocid="27cde061-4e68-dff5-01c6-2ed1364d2425">Create Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="727a7d89-ed06-5da3-7519-c656b28745a5.htm" title="Dispose Method " tocid="727a7d89-ed06-5da3-7519-c656b28745a5">Dispose Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="030c685d-26ce-728f-6e7f-866dd36f3e92.htm" title="DropDatabase Method " tocid="030c685d-26ce-728f-6e7f-866dd36f3e92">DropDatabase Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="71b6a0a3-7aa9-a152-8d25-7f34490219a4.htm" title="DropField Method " tocid="71b6a0a3-7aa9-a152-8d25-7f34490219a4">DropField Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="49d4206b-245e-8f25-b634-9a06122630db.htm" title="Enumerate Method " tocid="49d4206b-245e-8f25-b634-9a06122630db">Enumerate Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="9cb55817-3675-5680-3f42-90a49ad07e6e.htm" title="Exists Method " tocid="9cb55817-3675-5680-3f42-90a49ad07e6e">Exists Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="24312a9d-ee22-0be1-2873-a09bf7c1a14e.htm" title="GetConnectionString Method " tocid="24312a9d-ee22-0be1-2873-a09bf7c1a14e">GetConnectionString Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="125e7813-99a0-e217-9ed3-d636a94bde25.htm" title="GetNhConfiguration Method " tocid="125e7813-99a0-e217-9ed3-d636a94bde25">GetNhConfiguration Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="947a1f46-ee0d-3df7-e9ec-9060b436bc98.htm" title="OnDispose Method " tocid="947a1f46-ee0d-3df7-e9ec-9060b436bc98">OnDispose Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="c603bc11-7ada-66ca-d27d-a2ecf51d0a86.htm" title="Update Method " tocid="c603bc11-7ada-66ca-d27d-a2ecf51d0a86">Update Method </a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
+        <table class="titleTable">
+          <tr>
+            <td class="logoColumn">
+              <img src="../icons/Help.png" />
+            </td>
+            <td class="titleColumn">DbManager Methods</td>
+          </tr>
+        </table>
+        <span class="introStyle"></span>
+        <p>The <a href="173268c9-9562-bd55-84a7-c7503b371a40.htm">DbManager</a> type exposes the following members.</p>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0">
+            <img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Methods</span>
+        </div>
+        <div id="ID0RBSection" class="collapsibleSection">
+          <table id="memberList" class="members">
+            <tr>
+              <th class="iconColumn">
+								 
+							</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="b15b5c7e-82b7-4438-3d77-2a01ac39abb4.htm">AddField</a>
+              </td>
+              <td>
+                <div class="summary">
+            Add the field
+            </div>
+              </td>
+            </tr>
+            <tr data="public;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="2b0343cb-0b9c-f49f-78e6-5f193b6a5a61.htm">Backup</a>
+              </td>
+              <td>
+                <div class="summary">
+            Open a Read stream to a database backup
+            </div>
+              </td>
+            </tr>
+            <tr data="public;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="7a5f2d4d-ecc5-2467-d9df-b5357042058d.htm">Check</a>
+              </td>
+              <td>
+                <div class="summary">
+            Check if the entity exists and is updated in the catalog
+            </div>
+              </td>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="a727383c-ba76-4aac-6e57-601e6122b374.htm">CheckSchema</a>
+              </td>
+              <td>
+                <div class="summary">
+            Check if the schema exists and create it if not
+            </div>
+              </td>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="27cde061-4e68-dff5-01c6-2ed1364d2425.htm">Create</a>
+              </td>
+              <td>
+                <div class="summary">
+            Create the entity table in the database
+            </div>
+              </td>
+            </tr>
+            <tr data="public;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="727a7d89-ed06-5da3-7519-c656b28745a5.htm">Dispose</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="public;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="030c685d-26ce-728f-6e7f-866dd36f3e92.htm">DropDatabase</a>
+              </td>
+              <td>
+                <div class="summary">
+            Drop the database
+            </div>
+              </td>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="71b6a0a3-7aa9-a152-8d25-7f34490219a4.htm">DropField</a>
+              </td>
+              <td>
+                <div class="summary">
+            Drop the field
+            </div>
+              </td>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="49d4206b-245e-8f25-b634-9a06122630db.htm">Enumerate</a>
+              </td>
+              <td>
+                <div class="summary">
+            Enumerate all fields from a table
+            </div>
+              </td>
+            </tr>
+            <tr data="public;inherited;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals</a>
+              </td>
+              <td>
+                <div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="9cb55817-3675-5680-3f42-90a49ad07e6e.htm">Exists</a>
+              </td>
+              <td>
+                <div class="summary">
+            Check if the database already exists
+            </div>
+              </td>
+            </tr>
+            <tr data="protected;inherited;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="http://msdn2.microsoft.com/en-us/library/4k87zsw7" target="_blank">Finalize</a>
+              </td>
+              <td>
+                <div class="summary">Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td>
+            </tr>
+            <tr data="public;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="24312a9d-ee22-0be1-2873-a09bf7c1a14e.htm">GetConnectionString</a>
+              </td>
+              <td>
+                <div class="summary">
+            Connection String
+            </div>
+              </td>
+            </tr>
+            <tr data="public;inherited;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a>
+              </td>
+              <td>
+                <div class="summary">Serves as the default hash function. </div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td>
+            </tr>
+            <tr data="public;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="125e7813-99a0-e217-9ed3-d636a94bde25.htm">GetNhConfiguration</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="public;inherited;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a>
+              </td>
+              <td>
+                <div class="summary">Gets the <a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td>
+            </tr>
+            <tr data="protected;inherited;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="http://msdn2.microsoft.com/en-us/library/57ctke0a" target="_blank">MemberwiseClone</a>
+              </td>
+              <td>
+                <div class="summary">Creates a shallow copy of the current <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="947a1f46-ee0d-3df7-e9ec-9060b436bc98.htm">OnDispose</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="public;inherited;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+              </td>
+              <td>
+                <a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a>
+              </td>
+              <td>
+                <div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td>
+            </tr>
+            <tr data="protected;declared;notNetfw;">
+              <td>
+                <img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" />
+              </td>
+              <td>
+                <a href="c603bc11-7ada-66ca-d27d-a2ecf51d0a86.htm">Update</a>
+              </td>
+              <td>
+                <div class="summary">
+            Update the entity in the database
+            </div>
+              </td>
+            </tr>
+          </table>
+          <a href="#PageHeader">Top</a>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0">
+            <img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Extension Methods</span>
+        </div>
+        <div id="ID1RBSection" class="collapsibleSection">
+          <table id="memberList" class="members">
+            <tr>
+              <th class="iconColumn">
+								 
+							</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr data="public;inherited;notNetfw;">
+              <td>
+                <img src="../icons/pubextension.gif" alt="Public Extension Method" title="Public Extension Method" />
+              </td>
+              <td>
+                <a href="c6f50618-fc3f-4c4b-4814-cd175e0d1cea.htm">ToDictionary<span id="LSTDA5B694E_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDA5B694E_0?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>
+              </td>
+              <td>Overloaded.  <div class="summary">
+            Convert the object properties to a dictionary
+            </div> (Defined by <a href="47137137-5ca5-ccbd-baeb-ae95d8cc15cd.htm">ObjectUtility</a>.)</td>
+            </tr>
+            <tr data="public;inherited;notNetfw;">
+              <td>
+                <img src="../icons/pubextension.gif" alt="Public Extension Method" title="Public Extension Method" />
+              </td>
+              <td>
+                <a href="371d6f40-fdb8-0fae-b6eb-d6fb24d679ef.htm">ToDictionary<span id="LSTDA5B694E_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDA5B694E_1?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>T<span id="LSTDA5B694E_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDA5B694E_2?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script><span id="LSTDA5B694E_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDA5B694E_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>
+              </td>
+              <td>Overloaded.  <div class="summary">
+            Converts the object properties to a dictionary
+            </div> (Defined by <a href="47137137-5ca5-ccbd-baeb-ae95d8cc15cd.htm">ObjectUtility</a>.)</td>
+            </tr>
+          </table>
+          <a href="#PageHeader">Top</a>
+        </div>
+        <div class="collapsibleAreaRegion" id="seeAlsoSection">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0">
+            <img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span>
+        </div>
+        <div id="ID2RBSection" class="collapsibleSection">
+          <h4 class="subHeading">Reference</h4>
+          <div class="seeAlsoStyle">
+            <a href="173268c9-9562-bd55-84a7-c7503b371a40.htm">DbManager Class</a>
+          </div>
+          <div class="seeAlsoStyle">
+            <a href="1d94842a-e475-99e4-001d-e9c24e8cbf8f.htm">DrawerBackup.Native.Data Namespace</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pageFooter" class="pageFooter"> </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Drawer Backup - Backup & Safety",
+  "tagline": "DrawerBackup Official WebPage",
+  "body": "### DrawerBackup \r\nIt is a set of computer services and tools to backup and recovery important data. Allowing a quick and easy storage of important information and rapid restoration of them. It’s a computer network-based architecture allowing backup/restore begin done via any type of network, even over the internet. It is also modular and adapts to any environment quickly and easily. Allowing perform backups of small networks and large networks.\r\n\r\n### Documentation\r\n[Documentation](http://drawerbackup.readthedocs.io/en/latest/)\r\n\r\n### Authors and Contributors\r\nAuthor: Marcelo Junior (@mInternauta)\r\n\r\n### Support or Contact\r\nHaving trouble with DrawerBackup? Create a new issue for a possible bug or contact the @mInternauta\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
